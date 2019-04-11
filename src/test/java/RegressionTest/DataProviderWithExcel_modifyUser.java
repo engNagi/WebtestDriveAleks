@@ -23,13 +23,13 @@ public class DataProviderWithExcel_modifyUser {
 
     @DataProvider(name = "userLogin")
     public static Object[][] userLogin() {
-        Object[][] testObjArray = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","UserLogin");
+        Object[][] testObjArray = ExcelUtils.getTableArray("Resources/AddUserTCs.xlsx","UserLogin");
         return (testObjArray);
     }
 
     @DataProvider(name = "addUser")
     public static Object[][] addUser() {
-        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","User");
+        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("Resources/AddUserTCs.xlsx","User");
         return (testObjArray_addUser);
     }
 

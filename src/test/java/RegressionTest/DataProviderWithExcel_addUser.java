@@ -24,7 +24,7 @@ public class DataProviderWithExcel_addUser {
 
     @DataProvider(name = "addUser")
     public static Object[][] addUser() {
-        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","User");
+        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("Resources/AddUserTCs.xlsx","User");
         return (testObjArray_addUser);
     }
 

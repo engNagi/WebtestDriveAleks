@@ -34,7 +34,7 @@ public class DataProviderwithExcel_deleteUser {
     }
     @DataProvider(name = "delteUser")
     public static Object[][] deleteUser() {
-        Object[][] testObjArray_deleteUser = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","deleteUser");
+        Object[][] testObjArray_deleteUser = ExcelUtils.getTableArray("Resources/AddUserTCs.xlsx","deleteUser");
         return (testObjArray_deleteUser);
     }
 
