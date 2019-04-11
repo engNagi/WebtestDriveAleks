@@ -1,0 +1,1155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">ChromeTest</td><td class="numi">7</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">21</td><td class="numi">254.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">OperaTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">24</td><td class="numi_attn">1</td><td class="numi">1.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">7</td><td class="numi">6</td><td class="numi_attn">24</td><td class="numi_attn">22</td><td class="numi">256.5 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">ChromeTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="9">RegressionTest.DataProviderWithExcel_addUser</td><td><a href="#m1"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m2"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m3"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m4"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m5"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m6"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m7"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m8"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr><tr class="failedodd"><td><a href="#m9"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975261547</td><td class="numi">207478</td></tr>
+<tr class="failedeven"><td rowspan="3">RegressionTest.DataProviderWithExcel_modifyUser</td><td><a href="#m10"><b>B001_loginUser</b>  </a></td><td class="numi">1</td><td>1554975486007</td><td class="numi">4755</td></tr><tr class="failedeven"><td><a href="#m11"><b>B001_loginUser</b>  </a></td><td class="numi">1</td><td>1554975486007</td><td class="numi">4755</td></tr><tr class="failedeven"><td><a href="#m12"><b>B001_loginUser</b>  </a></td><td class="numi">1</td><td>1554975486007</td><td class="numi">4755</td></tr>
+<tr class="failedodd"><td rowspan="8">RegressionTest.DataProviderwithExcel_deleteUser</td><td><a href="#m13"><b>A001_loginAdmin</b>  </a></td><td class="numi">1</td><td>1554975500952</td><td class="numi">4771</td></tr><tr class="failedodd"><td><a href="#m14"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975505819</td><td class="numi">1082</td></tr><tr class="failedodd"><td><a href="#m15"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975505819</td><td class="numi">1082</td></tr><tr class="failedodd"><td><a href="#m16"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975505819</td><td class="numi">1082</td></tr><tr class="failedodd"><td><a href="#m17"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975505819</td><td class="numi">1082</td></tr><tr class="failedodd"><td><a href="#m18"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975505819</td><td class="numi">1082</td></tr><tr class="failedodd"><td><a href="#m19"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975505819</td><td class="numi">1082</td></tr><tr class="failedodd"><td><a href="#m20"><b>Z1000_logoutAdmin</b>  </a></td><td class="numi">1</td><td>1554975506903</td><td class="numi">29</td></tr>
+<tr class="failedeven"><td rowspan="1">RegressionTest.DataProviderWithExcel_modifyUser</td><td><a href="#m21"><b>A002_ChangeRoleforUser</b>  </a></td><td class="numi">1</td><td>1554975477083</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ChromeTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">RegressionTest.DataProviderWithExcel_addUser</td><td><a href="#m22"><b>A001_loginAdmin</b>  </a></td><td class="numi">1</td><td>1554975257078</td><td class="numi">3576</td></tr><tr class="passedodd"><td><a href="#m23"><b>Z1000_logout</b>  </a></td><td class="numi">1</td><td>1554975469026</td><td class="numi">1426</td></tr>
+<tr class="passedeven"><td rowspan="5">RegressionTest.DataProviderWithExcel_modifyUser</td><td><a href="#m24"><b>A001_loginAdmin</b>  </a></td><td class="numi">1</td><td>1554975473484</td><td class="numi">3598</td></tr><tr class="passedeven"><td><a href="#m25"><b>A100_adminlogout</b>  </a></td><td class="numi">1</td><td>1554975477084</td><td class="numi">1574</td></tr><tr class="passedeven"><td><a href="#m26"><b>B001_loginUser</b>  </a></td><td class="numi">2</td><td>1554975478770</td><td class="numi">18938</td></tr><tr class="passedeven"><td><a href="#m27"><b>B001_loginUser</b>  </a></td><td class="numi">2</td><td>1554975478770</td><td class="numi">18938</td></tr><tr class="passedeven"><td><a href="#m28"><b>B001_loginUser</b>  </a></td><td class="numi">2</td><td>1554975478770</td><td class="numi">18938</td></tr>
+<tr><th colspan="4">OperaTest &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">RegressionTest.DataProviderWithExcel_addUser</td><td><a href="#m29"><b>setUp</b>  </a></td><td class="numi">1</td><td>1554975507452</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m30"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1554975508653</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="2">RegressionTest.DataProviderWithExcel_modifyUser</td><td><a href="#m31"><b>setUp</b>  </a></td><td class="numi">1</td><td>1554975508683</td><td class="numi">0</td></tr><tr class="failedeven"><td><a href="#m32"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1554975508904</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">RegressionTest.DataProviderwithExcel_deleteUser</td><td><a href="#m33"><b>setUp</b>  </a></td><td class="numi">1</td><td>1554975508909</td><td class="numi">0</td></tr>
+<tr><th colspan="4">OperaTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">RegressionTest.DataProviderWithExcel_modifyUser</td><td><a href="#m34"><b>A002_ChangeRoleforUser</b>  </a></td><td class="numi">1</td><td>1554975508801</td><td class="numi">0</td></tr>
+<tr><th colspan="4">OperaTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="11">RegressionTest.DataProviderWithExcel_addUser</td><td><a href="#m35"><b>A001_loginAdmin</b>  </a></td><td class="numi">1</td><td>1554975508470</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m36"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m37"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m38"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m39"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m40"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m41"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m42"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m43"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m44"><b>A002_adduser</b>  </a></td><td class="numi">9</td><td>1554975508606</td><td class="numi">44</td></tr><tr class="skippedodd"><td><a href="#m45"><b>Z1000_logout</b>  </a></td><td class="numi">1</td><td>1554975508653</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="5">RegressionTest.DataProviderWithExcel_modifyUser</td><td><a href="#m46"><b>A001_loginAdmin</b>  </a></td><td class="numi">1</td><td>1554975508800</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m47"><b>A100_adminlogout</b>  </a></td><td class="numi">1</td><td>1554975508802</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m48"><b>B001_loginUser</b>  </a></td><td class="numi">3</td><td>1554975508903</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m49"><b>B001_loginUser</b>  </a></td><td class="numi">3</td><td>1554975508903</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m50"><b>B001_loginUser</b>  </a></td><td class="numi">3</td><td>1554975508903</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="8">RegressionTest.DataProviderwithExcel_deleteUser</td><td><a href="#m51"><b>A001_loginAdmin</b>  </a></td><td class="numi">1</td><td>1554975509018</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m52"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975509119</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m53"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975509119</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m54"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975509119</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m55"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975509119</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m56"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975509119</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m57"><b>B_0001_SearchUser</b>  </a></td><td class="numi">6</td><td>1554975509119</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m58"><b>Z1000_logoutAdmin</b>  </a></td><td class="numi">1</td><td>1554975509130</td><td class="numi">5</td></tr>
+</table>
+<h1>ChromeTest</h1>
+<h2 id="m1">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase10</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user-search-input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=user-search-input}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.B_0001_SearchUser(DataProviderwithExcel_deleteUser.java:99)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">RegressionTest.DataProviderWithExcel_modifyUser:A002_ChangeRoleforUser</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+<br/>at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase9</td>
+<td>zz_nase9@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase9</td>
+<td>$_</td>
+<td>false</td>
+<td>Mitarbeiter</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase13</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user-search-input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=user-search-input}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.B_0001_SearchUser(DataProviderwithExcel_deleteUser.java:99)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase1</td>
+<td>zz_nase1@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase1</td>
+<td>$_1234%!zz_nase1</td>
+<td>false</td>
+<td>Mitarbeiter</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase3</td>
+<td>zz_nase3@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase3</td>
+<td>$_1234%!zz_nase3</td>
+<td>false</td>
+<td>Autor</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase11</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user-search-input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=user-search-input}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.B_0001_SearchUser(DataProviderwithExcel_deleteUser.java:99)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">RegressionTest.DataProviderwithExcel_deleteUser:A001_loginAdmin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>LoginasAdmin</td>
+<td>admin</td>
+<td>!NCS2019</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>Expected condition failed: waiting for presence of any elements located by By.id: wp-admin-bar-my-account (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.A001_loginAdmin(DataProviderwithExcel_deleteUser.java:85)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">RegressionTest.DataProviderwithExcel_deleteUser:Z1000_logoutAdmin</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;wp-admin-bar-my-account&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=wp-admin-bar-my-account}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.Z1000_logoutAdmin(DataProviderwithExcel_deleteUser.java:205)
+<br/>24 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase8</td>
+<td>zz_nase8@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase8</td>
+<td>$_1234zz</td>
+<td>false</td>
+<td>Redakteur</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>deleteAdminNotPossibleUser</td>
+<td>admin</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user-search-input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=user-search-input}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.B_0001_SearchUser(DataProviderwithExcel_deleteUser.java:99)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase4</td>
+<td>zz_nase4@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase4</td>
+<td>$_1234%!zz_nase4</td>
+<td>false</td>
+<td>Redakteur</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">RegressionTest.DataProviderWithExcel_modifyUser:B001_loginUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>loginUser_LoginEmail</td>
+<td>zz_nase8@emailgehtnicht.de</td>
+<td>$_1234zz</td>
+<td>ZZ</td>
+<td>Nase8</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="5">
+<p>Expected condition failed: waiting for presence of any elements located by By.id: wp-admin-bar-my-account (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63360}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: bbf867420b56bec8f0ea157dccf18c2b</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_modifyUser.B001_loginUser(DataProviderWithExcel_modifyUser.java:128)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase5</td>
+<td>zz_nase5@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase5</td>
+<td>$_1234%!zz_nase5</td>
+<td>false</td>
+<td>Mitarbeiter</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase6</td>
+<td>zz_nase6@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase6</td>
+<td>$_1234%!zz_nase6</td>
+<td>false</td>
+<td>Abonnent</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase7</td>
+<td>zz_nase7@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase7</td>
+<td>$_1234%!zz_nase7</td>
+<td>false</td>
+<td>Autor</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeletUser</td>
+<td>istnichtda</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user-search-input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=user-search-input}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.B_0001_SearchUser(DataProviderwithExcel_deleteUser.java:99)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase2</td>
+<td>zz_nase2@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase2</td>
+<td>$_1234%!zz_nase2</td>
+<td>false</td>
+<td>Abonnent</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="8">
+<p>Expected condition failed: waiting for presence of element located by: By.id: message (tried for 20 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+<p>Caused by Cannot locate an element using By.id: message
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.A002_adduser(DataProviderWithExcel_addUser.java:126)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase12</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;user-search-input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/2w/z8lss35d1hx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63390}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 4f42e46222054347e8282037b7f1d0ca
+*** Element info: {Using=id, value=user-search-input}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.B_0001_SearchUser(DataProviderwithExcel_deleteUser.java:99)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">RegressionTest.DataProviderWithExcel_modifyUser:A001_loginAdmin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">RegressionTest.DataProviderWithExcel_modifyUser:A100_adminlogout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">RegressionTest.DataProviderWithExcel_modifyUser:B001_loginUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>loginUser_LoginName</td>
+<td>zz_nase8</td>
+<td>$_1234zz</td>
+<td>ZZ</td>
+<td>Nase8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">RegressionTest.DataProviderWithExcel_addUser:A001_loginAdmin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">RegressionTest.DataProviderWithExcel_addUser:Z1000_logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">RegressionTest.DataProviderWithExcel_modifyUser:B001_loginUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>loginUser_LoginName</td>
+<td>zz_nase8</td>
+<td>$_1234zz</td>
+<td>ZZ</td>
+<td>Nase8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>OperaTest</h1>
+<h2 id="m26">RegressionTest.DataProviderWithExcel_addUser:tearDown</h2>
+<div style="padding-left:3em">
+<p>null</p>
+RegressionTest.DataProviderWithExcel_addUser.tearDown(DataProviderWithExcel_addUser.java:149)
+<br/>24 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">RegressionTest.DataProviderwithExcel_deleteUser:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>opera</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>unknown error: cannot find Opera binary
+  (Driver info: OperaDriver=2.45.3255 (O60),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: OperaDriver</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:173)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:160)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:115)
+<br/>at RegressionTest.DataProviderwithExcel_deleteUser.setUp(DataProviderwithExcel_deleteUser.java:55)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">RegressionTest.DataProviderWithExcel_addUser:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>opera</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>unknown error: cannot find Opera binary
+  (Driver info: OperaDriver=2.45.3255 (O60),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: OperaDriver</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:173)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:160)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:115)
+<br/>at RegressionTest.DataProviderWithExcel_addUser.setUp(DataProviderWithExcel_addUser.java:44)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">RegressionTest.DataProviderWithExcel_modifyUser:tearDown</h2>
+<div style="padding-left:3em">
+<p>null</p>
+RegressionTest.DataProviderWithExcel_modifyUser.tearDown(DataProviderWithExcel_modifyUser.java:173)
+<br/>24 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">RegressionTest.DataProviderWithExcel_modifyUser:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>opera</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>unknown error: cannot find Opera binary
+  (Driver info: OperaDriver=2.45.3255 (O60),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Mohameds-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:c80:f21e:3bbc:1bbc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;12&apos;
+Driver info: driver.version: OperaDriver</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:173)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:160)
+<br/>at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:115)
+<br/>at RegressionTest.DataProviderWithExcel_modifyUser.setUp(DataProviderWithExcel_modifyUser.java:57)
+<br/>24 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">RegressionTest.DataProviderWithExcel_modifyUser:A002_ChangeRoleforUser</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+<br/>at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase6</td>
+<td>zz_nase6@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase6</td>
+<td>$_1234%!zz_nase6</td>
+<td>false</td>
+<td>Abonnent</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">RegressionTest.DataProviderWithExcel_modifyUser:B001_loginUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>loginUser_LoginEmail</td>
+<td>zz_nase8@emailgehtnicht.de</td>
+<td>$_1234zz</td>
+<td>ZZ</td>
+<td>Nase8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase11</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase8</td>
+<td>zz_nase8@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase8</td>
+<td>$_1234zz</td>
+<td>false</td>
+<td>Redakteur</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase1</td>
+<td>zz_nase1@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase1</td>
+<td>$_1234%!zz_nase1</td>
+<td>false</td>
+<td>Mitarbeiter</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">RegressionTest.DataProviderWithExcel_addUser:Z1000_logout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase3</td>
+<td>zz_nase3@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase3</td>
+<td>$_1234%!zz_nase3</td>
+<td>false</td>
+<td>Autor</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase9</td>
+<td>zz_nase9@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase9</td>
+<td>$_</td>
+<td>false</td>
+<td>Mitarbeiter</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase12</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">RegressionTest.DataProviderwithExcel_deleteUser:Z1000_logoutAdmin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase7</td>
+<td>zz_nase7@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase7</td>
+<td>$_1234%!zz_nase7</td>
+<td>false</td>
+<td>Autor</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">RegressionTest.DataProviderwithExcel_deleteUser:A001_loginAdmin</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>LoginasAdmin</td>
+<td>admin</td>
+<td>!NCS2019</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase2</td>
+<td>zz_nase2@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase2</td>
+<td>$_1234%!zz_nase2</td>
+<td>false</td>
+<td>Abonnent</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">RegressionTest.DataProviderWithExcel_modifyUser:B001_loginUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>loginUser_LoginName</td>
+<td>zz_nase8</td>
+<td>$_1234zz</td>
+<td>ZZ</td>
+<td>Nase8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">RegressionTest.DataProviderWithExcel_modifyUser:A001_loginAdmin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">RegressionTest.DataProviderWithExcel_modifyUser:A100_adminlogout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase5</td>
+<td>zz_nase5@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase5</td>
+<td>$_1234%!zz_nase5</td>
+<td>false</td>
+<td>Mitarbeiter</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase10</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">RegressionTest.DataProviderWithExcel_addUser:A002_adduser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>changeUserRole</td>
+<td>zz_nase4</td>
+<td>zz_nase4@emailgehtnicht.de</td>
+<td>ZZ</td>
+<td>Nase4</td>
+<td>$_1234%!zz_nase4</td>
+<td>false</td>
+<td>Redakteur</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">RegressionTest.DataProviderWithExcel_modifyUser:B001_loginUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>loginUser_LoginName</td>
+<td>zz_nase8</td>
+<td>$_1234zz</td>
+<td>ZZ</td>
+<td>Nase8</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeletUser</td>
+<td>istnichtda</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">RegressionTest.DataProviderWithExcel_addUser:A001_loginAdmin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>deleteAdminNotPossibleUser</td>
+<td>admin</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">RegressionTest.DataProviderwithExcel_deleteUser:B_0001_SearchUser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>DeleteUser</td>
+<td>nase13</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

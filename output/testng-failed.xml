@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]">
+  <parameter name="browser" value="opera"/>
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="RegressionTest.DataProviderWithExcel_addUser">
+        <methods>
+          <include name="A002_adduser" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- RegressionTest.DataProviderWithExcel_addUser -->
+      <class name="RegressionTest.DataProviderWithExcel_modifyUser">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="B001_loginUser" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="A002_ChangeRoleforUser"/>
+        </methods>
+      </class> <!-- RegressionTest.DataProviderWithExcel_modifyUser -->
+      <class name="RegressionTest.DataProviderwithExcel_deleteUser">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="Z1000_logoutAdmin"/>
+          <include name="A001_loginAdmin" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="B_0001_SearchUser" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- RegressionTest.DataProviderwithExcel_deleteUser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="OperaTest(failed)">
+    <parameter name="browser" value="opera"/>
+    <classes>
+      <class name="RegressionTest.DataProviderWithExcel_addUser">
+        <methods>
+          <include name="A001_loginAdmin"/>
+          <include name="Z1000_logout"/>
+          <include name="A002_adduser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- RegressionTest.DataProviderWithExcel_addUser -->
+      <class name="RegressionTest.DataProviderWithExcel_modifyUser">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="B001_loginUser"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="A002_ChangeRoleforUser"/>
+          <include name="A100_adminlogout"/>
+          <include name="A001_loginAdmin"/>
+        </methods>
+      </class> <!-- RegressionTest.DataProviderWithExcel_modifyUser -->
+      <class name="RegressionTest.DataProviderwithExcel_deleteUser">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="Z1000_logoutAdmin"/>
+          <include name="A001_loginAdmin"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="B_0001_SearchUser"/>
+        </methods>
+      </class> <!-- RegressionTest.DataProviderwithExcel_deleteUser -->
+    </classes>
+  </test> <!-- OperaTest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
