@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="WebDriverTest" />
+        <module name="WebtestDriveAleks" />
         <module name="WebtestDriveAleks2" />
       </profile>
     </annotationProcessing>

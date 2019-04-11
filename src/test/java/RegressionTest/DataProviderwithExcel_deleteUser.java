@@ -22,7 +22,7 @@ public class DataProviderwithExcel_deleteUser {
     private static WebDriver driver;
     WebDriverWait wait;
 
-    public String baseUrl = "http://localhost/wordpress/";
+    public String baseUrl = "http://localhost:8888/wordpress/";
     public WebElement webtable;
 
     @DataProvider(name = "Admin")
@@ -34,7 +34,7 @@ public class DataProviderwithExcel_deleteUser {
     }
     @DataProvider(name = "delteUser")
     public static Object[][] deleteUser() {
-        Object[][] testObjArray_deleteUser = ExcelUtils.getTableArray("C:\\Users\\ZTE_testing\\IdeaProjects\\WebDriverTest\\AddUserTCs.xlsx","deleteUser");
+        Object[][] testObjArray_deleteUser = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","deleteUser");
         return (testObjArray_deleteUser);
     }
 

@@ -16,20 +16,20 @@ import static org.testng.Assert.fail;
 
 public class DataProviderWithExcel_modifyUser {
     private WebDriver driver;
-    public String baseUrl = "http://localhost/wordpress";
+    public String baseUrl = "http://localhost:8888/wordpress/";
     public WebElement webtable;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
     @DataProvider(name = "userLogin")
     public static Object[][] userLogin() {
-        Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\ZTE_testing\\IdeaProjects\\WebDriverTest\\AddUserTCs.xlsx","UserLogin");
+        Object[][] testObjArray = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","UserLogin");
         return (testObjArray);
     }
 
     @DataProvider(name = "addUser")
     public static Object[][] addUser() {
-        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("C:\\Users\\ZTE_testing\\IdeaProjects\\WebDriverTest\\AddUserTCs.xlsx","User");
+        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","User");
         return (testObjArray_addUser);
     }
 

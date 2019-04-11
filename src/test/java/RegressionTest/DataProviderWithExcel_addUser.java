@@ -17,14 +17,14 @@ import static org.testng.Assert.fail;
 
 public class DataProviderWithExcel_addUser {
     private WebDriver driver;
-    public String baseUrl = "http://localhost/wordpress";
+    public String baseUrl = "http://localhost:8888/wordpress/";
     public WebElement webtable;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
     @DataProvider(name = "addUser")
     public static Object[][] addUser() {
-        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("C:\\Users\\ZTE_testing\\IdeaProjects\\WebDriverTest\\AddUserTCs.xlsx","User");
+        Object[][] testObjArray_addUser = ExcelUtils.getTableArray("/Users/mohamednagi/Desktop/Work/WebtestDriveAleks/Resources/AddUserTCs.xlsx","User");
         return (testObjArray_addUser);
     }
 
@@ -36,10 +36,6 @@ public class DataProviderWithExcel_addUser {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
-        else if(browser.equalsIgnoreCase("ie")){
-            WebDriverManager.iedriver().setup();
-            driver = new InternetExplorerDriver();
-        }
         else if(browser.equalsIgnoreCase("opera")){
             //System.setProperty(“webdriver.opera.driver”, "g\\AppData\\Local\\Programs\\Opera\\launcher.exe");
            // WebDriverManager.operadriver().targetPath("g\\AppData\\Local\\Programs\\Opera\\launcher.exe");
@@ -49,7 +45,6 @@ public class DataProviderWithExcel_addUser {
 
 
         }
-
         else {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
@@ -65,13 +60,14 @@ public class DataProviderWithExcel_addUser {
     public void A001_loginAdmin() {
         String sUsername = "admin";
         String sPassword = "!NCS2019";
-        driver.findElement(By.id("user_login")).sendKeys(sUsername);
+
         try{
             Thread.sleep(2000);
         }
         catch(InterruptedException ie){
         }
-        //driver.findElement(By.id("user_pass")).clear();
+
+        driver.findElement(By.id("user_login")).sendKeys(sUsername);
         driver.findElement(By.id("user_pass")).sendKeys(sPassword);
         driver.findElement(By.id("wp-submit")).click();
         WebDriverWait wait = new WebDriverWait(driver,2);
