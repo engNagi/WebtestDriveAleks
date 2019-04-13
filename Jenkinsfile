@@ -1,6 +1,9 @@
 pipeline
     {
-        agent 'docker-slave'
+        agent
+        {
+            docker-slave
+        }
         tools
         {
             maven 'mvn'
