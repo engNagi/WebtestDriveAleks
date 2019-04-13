@@ -2,7 +2,7 @@ pipeline
     {
         agent
         {
-            docker-slave
+          label 'docker-slave'
         }
         tools
         {
