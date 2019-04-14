@@ -2,7 +2,7 @@ pipeline
     {
         agent
         {
-          label 'Jenkins'
+          label 'docker-slave'
         }
         tools
         {
